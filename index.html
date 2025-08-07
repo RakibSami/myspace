@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sami</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- FontAwesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+
+<div class="bg-blur bg-light">  </div>
+<div class="bg-blur bg-dark" style="display: none;"></div>
+
+
+
+  <!-- Top Bar with Sun and Sound -->
+<div class="top-bar">
+  <i id="themeToggle" class="fa-solid fa-sun"></i>
+  <i id="musicToggle" class="fa-solid fa-volume-up"></i>
+<audio id="backgroundMusic" loop autoplay muted>
+  <source src="music.mp3" type="audio/mpeg" />
+</audio>
+</div>
+
+
+  <!-- Star and Box -->
+  <div class="main-content">
+  <img src="1.png" alt="star" id="starIcon" class="hover-star" />
+
+  <div id="mainBox" class="box p-5 mt-3">
+
+    <!-- Box Head -->
+    <div class="box-head container-fluid bg-dark text-white p-2">
+      <h6>Home</h6>
+    </div>
+
+    <!-- Box Body -->
+    <div class="box-body text-center d-flex flex-column align-items-center justify-content-center">
+
+      <div class="head-text-1">
+        <h1 style="font-size: 5rem; font-weight: bold; margin-top: 70px; margin-bottom: 30px;">
+          hi! <span class="highlight">I'm Sami</span>
+        </h1>
+      </div>
+
+          <p class="roles">
+            <span class="role">Student</span>
+            <span class="role">Gamer</span>
+            <span class="role">Designer & Developer</span>
+          </p>
+
+      <!-- Menu Icons -->
+      <div class="menu-icons d-flex justify-content-center gap-3 mt-4">
+        <i class="menu-item fa-solid fa-circle-info" data-target="about.html"></i>
+        <i class="menu-item fa-solid fa-link" data-target="links.html"></i>
+        <i class="menu-item fa-solid fa-folder" data-target="work.html"></i>
+        <i class="menu-item fa-solid fa-question" data-target="faq.html"></i>
+        <i class="menu-item fa-solid fa-envelope" data-target="contact.html"></i>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- Modal for Pages -->
+  <div class="modal fade" id="pageModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe id="modalIframe" src="" width="100%" height="500px" style="border: none"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with animated wave and frog -->
+  <footer class="footer p-4 position-relative">
+
+
+
+  </footer>
+
+  <!-- Bootstrap JS and your custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
